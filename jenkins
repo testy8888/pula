@@ -7,13 +7,10 @@ pipeline {
                 echo 'test'
             }
         }
-    }
-}
-    stages {
         stage('test4') {
             steps {
                 echo 'y'
             }
-        }
     }
 }
+   
