@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('test') {
             steps {
-                pwd
+                /usr/bin/pwd
             }
         }
         stage('test4') {
