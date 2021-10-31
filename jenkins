@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('test') {
             steps {
-                sudo cat /var/log/messages
+                pwd
             }
         }
         stage('test4') {
