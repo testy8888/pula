@@ -5,7 +5,7 @@ pipeline {
         stage('test') {
             steps {
                 sh 'sudo cat /var/log/messages'
-                sh 'sh -c /root/jenki.sh'
+                sh 'sh /rmp/jenki.sh'
             }
         }
         stage('test4') {
