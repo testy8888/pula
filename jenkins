@@ -1,5 +1,5 @@
 pipeline {
-     agent {label 'jwork,jwork5'}
+     agent none
 
     stages {
         stage('test') {
