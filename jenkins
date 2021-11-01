@@ -19,7 +19,7 @@ pipeline {
         changed {
             script {
                 if (currentBuild.currentResult == 'SUCCESS') {
-                echo 'success'
+                emailext( body: 'test', subject: 'test', to: 'root')
                                 }
             }
         }
