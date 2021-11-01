@@ -3,6 +3,7 @@ pipeline {
 
     stages {
         stage('test') {
+            agent{label 'jwork'}
             steps {
                 sh 'sudo cat /var/log/messages'
                 sh 'sh /tmp/jenki.sh'
@@ -10,6 +11,7 @@ pipeline {
             }
         }
         stage('test4') {
+            agent{label 'jwork5'} 
             steps {
                 echo 'test'
             }
