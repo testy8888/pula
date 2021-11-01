@@ -17,7 +17,7 @@ pipeline {
 }
     post {
         always {
-           emailext(body: 'yyyyyyyyyyyy', subject: 'test', to: 'linuly@mail.com')
+              echo 'test'
         }
     }
         
