@@ -11,13 +11,13 @@ pipeline {
         }
         stage('test4') {
             steps {
-                emailext(body: 'yyyyyyyyyyyy', subject: 'test', to: 'lelunicu@gmail.com')
+                emailext(body: 'yyyyyyyyyyyy', subject: 'test', to: 'linuly@mail.com')
             }
      }
 }
     post {
         always {
-           emailext(body: 'yyyyyyyyyyyy', subject: 'test', to: 'lelunicu@gmail.com')
+           emailext(body: 'yyyyyyyyyyyy', subject: 'test', to: 'linuly@mail.com')
         }
     }
         
