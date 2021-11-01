@@ -1,5 +1,9 @@
 pipeline {
      agent none
+      environment {
+        DISABLE_AUTH = 'true'
+        DB_ENGINE    = 'sqlite'
+    }
 
     stages {
         stage('test') {
@@ -8,6 +12,9 @@ pipeline {
                 sh 'sudo cat /var/log/messages'
                 sh 'sh /tmp/jenki.sh'
                 sh '/tmp/test'
+                echo "Database engine is ${DB_ENGINE}"
+                echo "DISABLE_AUTH is ${DISABLE_AUTH}"
+                sh 'printenv'
             }
         }
         stage('test4') {
