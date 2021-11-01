@@ -11,7 +11,7 @@ pipeline {
         }
         stage('test4') {
             steps {
-                emailext(body: 'yyyyyyyyyyyy', subject: 'test', to: 'linuly@mail.com')
+                echo 'test'
             }
      }
 }
