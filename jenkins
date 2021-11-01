@@ -18,6 +18,7 @@ pipeline {
      }
 }
       post {
+          agent {label 'jwork'}
         changed {
             script {
                 if (currentBuild.currentResult == 'SUCCESS') {
