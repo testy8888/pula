@@ -1,5 +1,4 @@
 pipeline {
-#    agent {label 'jwork' 'jwork5'}
     node('jwork||jwork5'){
 
     stages {
