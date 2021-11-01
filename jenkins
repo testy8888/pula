@@ -1,5 +1,5 @@
 pipeline {
-    agent jwork
+    agent any
 
     stages {
         stage('test') {
