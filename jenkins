@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent {label 'jwork'}
 
     stages {
         stage('test') {
@@ -11,7 +11,7 @@ pipeline {
         }
         stage('test4') {
             steps {
-                echo 'y'
+                emailext(attachLog: true, body: 'yyyyyyyyyyyy', subject: 'test', to: 'lelunicu@gmail.com')
             }
     }
 }
